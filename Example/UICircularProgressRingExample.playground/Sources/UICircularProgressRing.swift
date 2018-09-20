@@ -745,16 +745,16 @@ fileprivate extension CALayer {
      The type of animation function the ring view will use
 
      ## Important ##
-     Default = kCAMediaTimingFunctionEaseIn
+     Default = CAMediaTimingFunctionName.easeIn
 
-     String should be from kCAMediaTimingFunction_____
+     CAMediaTimingFunctionName should be from CAMediaTimingFunctionName_____
 
      Only used when calling .setValue(animated: true)
 
      ## Author
      Luis Padron
      */
-    @objc open var animationStyle: String = kCAMediaTimingFunctionEaseIn {
+    @objc open var animationStyle: CAMediaTimingFunctionName = CAMediaTimingFunctionName.easeIn {
         didSet {
             ringLayer.animationStyle = animationStyle
         }
